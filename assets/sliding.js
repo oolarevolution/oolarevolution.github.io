@@ -31,3 +31,7 @@ winElem.scroll(function(e) {
         }
     })
 })
+$('#view-counters').hide();
+$('#views').click(function() {
+    $('#view-counters').show(100);
+})

@@ -29,6 +29,9 @@ body { width: 100vw; }
 .come-in { transform: translateY(150px); animation: come-in 0.8s ease forwards; }
 .come-in:nth-child(odd) { animation-duration: 0.6s; }
 .already-visible { transform: translateY(0); animation: none; }
+.flex-container { display: flex; }
+.flex-child { flex: 1; }
+.flex-child:first-child { margin-right: 10px; }
 </style>
 </head>
 <body class="bg-dark text-light text-center">
@@ -44,7 +47,7 @@ body { width: 100vw; }
                 <h1>What is Oola?</h1>
                 <div class="text-left">
                     <p class="lead mb-0 mt-2">Oo´• la \ n. adj. \ 1 a: a state of awesomeness b: a life 
-                    that is balanced and growing in the key areas of health, finances, career, relationships, 
+                    that is balanced and grow mb-0ing in the key areas of health, finances, career, relationships, 
                     and well-being c: a destination (i.e., getting to Oola) 2 a: describing actions, insights 
                     and goals that lead to a balanced life (ex: That’s so Oola.) 3 a: the ultimate plan for 
                     achieving balance in an unbalanced world.</p>
@@ -163,7 +166,17 @@ body { width: 100vw; }
         <div class="module">
             <a href="https://twitter.com/intent/tweet?text=%23OOLAREVOLUTION" class="lead">#OOLAREVOLUTION</a>
             <p>Oola's mission is to touch the lives of 1 billion people in 7 years...</p>
-            <p>Starts 7/7/2021 - BE PART OF IT!</p>
+            <p>Starts 7/7/2021 - BE PART OF IT<span id="views">!</span></p>
+        </div>
+    </div>
+    <div id="view-counters" class="flex-container mb-5">
+        <div id="pageViews" class="container flex-child">
+            <p>Page Views!</p>
+            <img src="https://hitwebcounter.com/counter/counter.php?page=7804835&style=0027&nbdigits=8&type=page&initCount=0">
+        </div>
+        <div id="uniqueViews" class="container flex-child">
+            <p>Unique Visitors!</p>
+            <img src="https://hitwebcounter.com/counter/counter.php?page=7804836&style=0027&nbdigits=8&type=ip&initCount=0">
         </div>
     </div>
 </body>
